@@ -20,7 +20,7 @@ function CandidateList({ candidates, refreshTable }) {
 
     const handleSubmit = async () => {
         try {
-            await axios.put('http://localhost:3000/candidates', formData);
+            await axios.put('https://manojshiringbackend-5590f2b483a8.herokuapp.com/candidates', formData);
             alert('Candidate status updated successfully!');
             setFormData({ id: '', status: '', showEditUserModal: false });
             refreshTable();

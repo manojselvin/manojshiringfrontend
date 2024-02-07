@@ -6,7 +6,7 @@ function CandidateListPage() {
   const [candidates, setCandidates] = useState([]);
 
   const loadData = () => {
-    axios.get('http://localhost:3000/candidates')
+    axios.get('https://manojshiringbackend-5590f2b483a8.herokuapp.com/candidates')
       .then(response => {
         setCandidates(response.data);
       })

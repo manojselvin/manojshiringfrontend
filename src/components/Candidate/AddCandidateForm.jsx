@@ -26,7 +26,7 @@ function AddCandidateForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/candidates', formData);
+      await axios.post('https://manojshiringbackend-5590f2b483a8.herokuapp.com/candidates', formData);
       alert('Candidate added successfully!');
       setFormData({
         name: '',
